@@ -16,7 +16,7 @@ class SS_HTML5Value extends SS_HTMLValue
 
         // Use HTML5lib to parse the HTML fragment
         try {
-            $document = HTML5_Parser::parse(
+            $document = \SilverStripe\Html5\Html5Lib\HTML5_Parser::parse(
                 '<html><head><meta http-equiv="content-type" content="text/html; charset=utf-8"></head>'.
                 "<body>$content</body></html>"
             );

@@ -33,6 +33,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 // all flags are in hyphenated form
 
+namespace SilverStripe\Html5\Html5Lib;
+
 class HTML5_Tokenizer {
     /**
      * Points to an InputStream object.

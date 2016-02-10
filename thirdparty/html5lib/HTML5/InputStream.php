@@ -29,6 +29,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 // /* */ indicates verbatim text from the HTML 5 specification
 // // indicates regular comments
 
+namespace SilverStripe\Html5\Html5Lib;
+
 class HTML5_InputStream {
     /**
      * The string data we're parsing.

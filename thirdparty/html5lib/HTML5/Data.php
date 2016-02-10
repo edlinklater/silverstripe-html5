@@ -2,6 +2,8 @@
 
 // warning: this file is encoded in UTF-8!
 
+namespace SilverStripe\Html5\Html5Lib;
+
 class HTML5_Data
 {
 

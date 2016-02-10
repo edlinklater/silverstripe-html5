@@ -1,5 +1,7 @@
 <?php
 
+namespace SilverStripe\Html5\Html5Lib;
+
 require_once dirname(__FILE__) . '/Data.php';
 require_once dirname(__FILE__) . '/InputStream.php';
 require_once dirname(__FILE__) . '/TreeBuilder.php';

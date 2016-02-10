@@ -34,6 +34,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //      XDOM - DOM specific code (tagName is explicitly not marked).
 //          this is not (yet) in helper functions.
 
+namespace SilverStripe\Html5\Html5Lib;
+
 class HTML5_TreeBuilder {
     public $stack = array();
     public $context;
@@ -148,7 +150,7 @@ class HTML5_TreeBuilder {
 
     public function __construct() {
         $this->mode = self::INITIAL;
-        $this->dom = new DOMDocument;
+        $this->dom = new \DOMDocument;
 
         $this->dom->encoding = 'UTF-8';
         $this->dom->preserveWhiteSpace = true;
@@ -218,7 +220,7 @@ class HTML5_TreeBuilder {
             // Yes this is hacky. I'm kind of annoyed that I can't appendChild
             // a doctype to DOMDocument. Maybe I haven't chanted the right
             // syllables.
-            $impl = new DOMImplementation();
+            $impl = new \DOMImplementation();
             // This call can fail for particularly pathological cases (namely,
             // the qualifiedName parameter ($token['name']) could be missing.
             if ($token['name']) {
